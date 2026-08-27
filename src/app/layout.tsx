@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Instrument_Serif, Work_Sans } from "next/font/google";
-import "./globals.css";
+import "./globals.css"
 
 const instrumentSerif = Instrument_Serif({
   subsets: ["latin"],
@@ -22,9 +22,7 @@ export const metadata: Metadata = {
   description:
     "Kean Kariuki (@KeanKariuki) — developer portfolio: what I build, the tools I use, and how to reach me.",
   authors: [{ name: "Kean Kariuki" }],
-  icons: {
-    icon: "/favicon.ico",
-  },
+  
   openGraph: {
     type: "website",
   },
