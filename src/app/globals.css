@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * Design system definition.
+ * All colors use oklch. To add a new semantic color, add it here and
+ * register it in tailwind.config.ts under theme.extend.colors.
+ */
+
+:root {
+  --radius: 0.25rem;
+  --background: oklch(0.958 0.008 85);
+  --foreground: oklch(0.15 0 0);
+  --card: oklch(0.98 0.006 85);
+  --card-foreground: oklch(0.15 0 0);
+  --popover: oklch(0.98 0.006 85);
+  --popover-foreground: oklch(0.15 0 0);
+  --primary: oklch(0.15 0 0);
+  --primary-foreground: oklch(0.958 0.008 85);
+  --secondary: oklch(0.915 0.011 85);
+  --secondary-foreground: oklch(0.15 0 0);
+  --muted: oklch(0.915 0.011 85);
+  --muted-foreground: oklch(0.45 0.005 85);
+  --accent: oklch(0.32 0 0);
+  --accent-foreground: oklch(0.958 0.008 85);
+  --destructive: oklch(0.55 0.2 27);
+  --destructive-foreground: oklch(0.98 0 0);
+  --border: oklch(0.87 0.012 85);
+  --input: oklch(0.87 0.012 85);
+  --ring: oklch(0.32 0 0);
+}
+
+* {
+  border-color: var(--border);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
